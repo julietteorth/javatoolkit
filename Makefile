@@ -5,7 +5,7 @@ compile:
 	jar cvfm Main.jar manifest.txt -C bin .
 
 run: compile
-	java Main 
+	java -jar Main.jar
 
 clean: 
 	find . -type f -name "*.class" | xargs rm -f
